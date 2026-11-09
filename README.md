@@ -1,5 +1,3 @@
-# Fraud-Analytics Data Analysis
-
 # Fraud Analytics: Data Analysis
 
 **Tools:** SQL Server · Python (Google Colab, pandas, NumPy, Matplotlib) · Power BI
