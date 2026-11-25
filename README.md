@@ -61,39 +61,10 @@ The four page interactive report provides:
 3. **Anomaly & Balance Analysis:** High value transactions, average balances, discrepancy rates and zero destination balance movement comparisons.
 4. **Fraud Control & Monitoring:** Fraud, flagged and unflagged cases, fraud capture rate, unflagged cases by type, capture rate by type, unflagged fraud transaction value, flag precision and reconciliation.
 
-Key measures:
 
-- **Fraud capture rate:** Flagged fraud / all fraud.
-- **Flag precision:** Flagged fraud / all flagged transactions.
-- **Unflagged fraud:** Fraud cases where `isFlaggedFraud = 0`.
-- **Fraud reconciliation:** Flagged fraud + unflagged fraud = total fraud.
 
-## 5. Key Findings & Business Insights
 
-- **8,213 fraudulent transactions** represented approximately **0.13%** of all transactions. Only **16** were flagged; **8,197** were unflagged. Fraud capture rate was approximately **0.19%**.
-- Fraud was concentrated in **CASH_OUT and TRANSFER**. Unflagged fraud comprised 4,116 CASH_OUT and 4,081 TRANSFER cases. All 16 flagged fraud cases were TRANSFER.
-- Median fraudulent transaction amount was **441,423.44**, compared with **74,684.72** for legitimate transactions.
-- For TRANSFER, zero destination balance movement occurred in **99.29%** of fraud cases versus **0.02%** of legitimate cases. Destination discrepancy occurred in **99.95%** of fraud versus **21.83%** of legitimate transfers.
-- For CASH_OUT, origin discrepancy was observed in **0.58%** of fraud versus **89.12%** of legitimate transactions. This reinforces the need for transaction specific interpretation.
-- Unflagged fraudulent transaction value was approximately **6 billion** for each of CASH_OUT and TRANSFER. This is associated transaction value, **not confirmed realised financial loss**.
 
-## 6. Management Recommendations, Benefits & Measurement
-
-**Recommended actions**
-
-1. Priorities investigative review of unflagged CASH_OUT and TRANSFER transactions.
-2. Evaluate transaction type specific balance patterns as candidate risk indicators, subject to accounting rule validation.
-3. Review why the existing flagging indicator captures so few known fraud cases.
-4. Assess proposed control changes using a separate time based holdout sample before deployment.
-5. Establish recurring monitoring of capture rate, flag precision, false positives and transaction type performance.
-
-**Potential benefits:** Better allocation of investigation resources, improved visibility into control gaps, more consistent performance monitoring and the opportunity to improve fraud identification.
-
-**Success measurement:** Establish a baseline and monitor fraud capture rate, flag precision, false positive rate, unflagged fraud count, investigation yield, review workload and processing time. Evaluate changes against a defined comparison period or controlled pilot, with thresholds agreed by business stakeholders.
-
-## 7. Limitations & Next Steps
-
-The `step` field is a transaction time index, not a calendar timestamp. IQR and balance checks are exploratory. The analysis does not establish causality, quantify realised losses or demonstrate a deployed predictive model.
 
 Next steps are to complete the outstanding data quality counts, reconcile all analytical environments, validate balance expectations with business owners, assess flagged non fraud cases, test candidate controls on a time based holdout sample and establish a repeatable monitoring process.
 
