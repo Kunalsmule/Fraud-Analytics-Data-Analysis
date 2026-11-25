@@ -60,12 +60,3 @@ The four page interactive report provides:
 2. **Transaction Behaviour:** Total, average and median transaction amounts; transaction type comparisons; transaction value and volume.
 3. **Anomaly & Balance Analysis:** High value transactions, average balances, discrepancy rates and zero destination balance movement comparisons.
 4. **Fraud Control & Monitoring:** Fraud, flagged and unflagged cases, fraud capture rate, unflagged cases by type, capture rate by type, unflagged fraud transaction value, flag precision and reconciliation.
-
-
-
-
-
-
-Next steps are to complete the outstanding data quality counts, reconcile all analytical environments, validate balance expectations with business owners, assess flagged non fraud cases, test candidate controls on a time based holdout sample and establish a repeatable monitoring process.
-
-**Conclusion:** The project identifies a substantial gap in the existing fraud flagging indicator and transaction specific patterns that can guide further investigation. It provides management with an evidence based starting point for reviewing fraud controls, while clearly distinguishing observed findings.
